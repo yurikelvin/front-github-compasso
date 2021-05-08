@@ -1,0 +1,39 @@
+.RepositoryItem {
+  display: flex;
+  height: 4rem;
+  border: 1px solid $gray-500;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.RepositoryItem_description {
+  max-width: 30vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.RepositoryItem:first-of-type {
+  margin-top: 0rem;
+}
+
+.RepositoryItem_leftSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.RepositoryItem_name {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: $primary-color;
+}
+
+.RepositoryItem_rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

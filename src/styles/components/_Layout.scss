@@ -1,0 +1,39 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.Layout_nav {
+  background: white;
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 0;
+  height: 5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #edf2f7;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  align-items: center;
+  padding: 1rem 15rem;
+}
+
+.Layout_nav_github {
+  display: flex;
+  align-items: center;
+}
+
+.Layout_content {
+  display: flex;
+  flex: 1 1 0%;
+  flex-shrink: 1;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.Layout_content_innerDiv {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex-grow: 1;
+}

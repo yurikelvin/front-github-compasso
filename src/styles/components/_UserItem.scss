@@ -1,0 +1,77 @@
+$text-gray-300: #a0aec0;
+
+.UserItem {
+  display: flex;
+  height: 6rem;
+  border: 1px solid #e2e8f0;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+
+.UserItem_leftAside {
+  display: flex;
+}
+
+.UserItem_rightAside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.UserItem_avatar {
+  height: 5rem;
+  width: 5rem;
+}
+
+.UserItem_avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserItem_name, .UserItem_username, .UserItem_bio {
+  white-space: nowrap;
+}
+
+.UserItem_name {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.UserItem_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.UserItem_profileMetadata {
+  display: flex;
+}
+
+.UserItem_username {
+  text-decoration: underline;
+  color: $text-gray-300;
+  margin-left: 0.2rem;
+  margin-top: 0.1rem
+}
+
+.UserItem_statTile {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.UserItem_stat {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.UserItem_stat:last-of-type {
+  margin-right: 0;
+}

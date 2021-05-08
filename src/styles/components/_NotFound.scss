@@ -1,0 +1,20 @@
+.NotFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #fc8181;
+}
+
+.NotFound_icon {
+  fill: currentColor;
+}
+
+.NotFound_title {
+  font-weight: normal;
+}
+
+.NotFound_description {
+  font-weight: normal;
+}

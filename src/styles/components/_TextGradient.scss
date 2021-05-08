@@ -1,0 +1,8 @@
+$gradient-pink-blue-color: -webkit-linear-gradient(-70deg,#db469f,#2188ff);
+
+.TextGradient {
+  background: $gradient-pink-blue-color;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

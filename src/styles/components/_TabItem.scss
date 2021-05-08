@@ -1,0 +1,34 @@
+
+
+.TabItem {
+  margin-left: 2rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: $text-gray-500;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.TabItem_active {
+  color: $primary-color !important;
+  border-color: $primary-color !important;
+}
+
+.TabItem_inactive:focus, .TabItem_inactive:hover {
+  color: $text-gray-700;
+  border-color: $border-gray-300;
+}
+
+.TabItem:focus {
+  outline: none;
+}
+
+.TabItem:first-of-type {
+  margin-left: 0rem;
+}

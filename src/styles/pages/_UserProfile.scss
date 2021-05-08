@@ -1,0 +1,57 @@
+.UserProfile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: white;
+  margin-top: 1rem;
+}
+
+.UserProfile_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.UserProfile_info {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  white-space: nowrap;
+}
+
+.UserProfile_avatar {
+  height: 15rem;
+  width: 15rem;
+}
+
+.UserProfile_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.UserProfile_name {
+  margin-block-end: 0;
+  font-size: 2rem;
+}
+
+.UserProfile_username {
+  color: $text-gray-300;
+  font-size: 1.2rem;
+}
+
+.UserProfile_statTile {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.UserProfile_stat {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.UserProfile_stat:last-of-type {
+  margin-right: 0;
+}
