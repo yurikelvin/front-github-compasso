@@ -1,0 +1,17 @@
+.Button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  max-width: fit-content;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.Button:hover {
+  opacity: 0.5;
+}

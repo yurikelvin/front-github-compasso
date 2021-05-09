@@ -8,8 +8,7 @@ class CoreService {
   api;
 
   constructor() {
-    this.AUTH_KEY = 'POWERDOC_AUTH';
-    this.USER_KEY = 'POWERDOC_USER';
+    this.AUTH_KEY = 'GITHUB_AUTH_TOKEN';
 
     this.api = axios.create({
       baseURL: API_URL,
@@ -22,7 +21,37 @@ class CoreService {
         return retryCount * 2000; // time interval between retries
       },
     });
+
+    this.api.interceptors.request.use(async config => {
+      const newConfig = config;
+      if (this.isAuthenticated()) {
+        newConfig.headers.Authorization = `token ${this.getAuthToken()}`;
+      }
+    
+      return newConfig;
+    });
+
   }
+
+  setAuthToken(auth) {
+    localStorage.setItem(this.AUTH_KEY, btoa(auth));
+  }
+
+  existsAuthToken = () => {
+    return this.getAuthToken() !== null;
+  }
+
+  isAuthenticated = () => localStorage.getItem(this.AUTH_KEY) !== null;
+
+  getAuthToken = () => {
+    const authLocal = localStorage.getItem(this.AUTH_KEY);
+    if (authLocal === null) {
+      return null;
+    }
+    return atob(authLocal);
+  }
+
+  getBaseUrl = () => API_URL;
 
   getApi = () => this.api;
 
